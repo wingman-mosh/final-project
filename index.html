@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jazmine Louisse Ilisan | Full-Stack Developer</title>
+    <meta name="description" content="Full-Stack Developer specializing in high-performance web applications and cloud architecture.">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --text: #1f2937;
+            --bg: #ffffff;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --text: #f1f5f9;
+                --bg: #0f172a;
+            }
+        }
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background: var(--bg);
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header, section { padding: 60px 20px; }
+        .hero {
+            text-align: center;
+            padding: 100px 20px 80px;
+            background: linear-gradient(135deg, #2563eb, #1e40af);
+            color: white;
+            border-radius: 16px;
+            margin-bottom: 40px;
+        }
+        .hero h1 { font-size: 3rem; margin-bottom: 16px; }
+        .hero p { font-size: 1.25rem; max-width: 600px; margin: 0 auto 24px; }
+        .btn {
+            display: inline-block;
+            background: white;
+            color: #2563eb;
+            padding: 12px 32px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            margin: 8px;
+        }
+        .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; }
+        .project-card {
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            overflow: hidden;
+            background: white;
+        }
+        @media (prefers-color-scheme: dark) {
+            .project-card { background: #1e2937; border-color: #334155; }
+        }
+        .project-card img { 
+    width: 100%; 
+    height: auto; 
+    aspect-ratio: 16 / 9; 
+    object-fit: cover; 
+    display: block;
+}
+        .project-card .content { padding: 20px; }
+        .tech-stack { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0; }
+        .tech { background: #f1f5f9; padding: 4px 12px; border-radius: 9999px; font-size: 0.875rem; }
+        @media (prefers-color-scheme: dark) { .tech { background: #334155; } }
+        .skills { display: flex; flex-wrap: wrap; gap: 12px; }
+        .skill { background: #e0f2fe; padding: 8px 16px; border-radius: 9999px; }
+        form { max-width: 600px; margin: 0 auto; }
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 16px;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+        }
+        footer { text-align: center; padding: 40px; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+    <!-- HERO & HOOK -->
+    <header class="hero">
+        <h1>Hi, I'm Jazmine Louisse A. Ilisan</h1>
+        <p>Full-Stack Developer specializing in building secure, high-performance web applications. I turn complex problems into elegant, user-friendly digital experiences.</p>
+        <a href="#projects" class="btn">View My Work</a>
+        <a href="#contact" class="btn" style="background:transparent; border:2px solid white; color:white;">Get In Touch</a>
+    </header>
+
+    <!-- PROOF GALLERY (Projects) -->
+<section id="projects">
+    <h2 style="text-align:center; margin-bottom:40px; font-size:2.5rem;">Featured Projects</h2>
+    <div class="projects">
+
+        <!-- Project 1: Cars Website -->
+        <div class="project-card">
+            <img src="images/car-website.png" 
+                 alt="Screenshot of A Website All About Cars - showcasing various car models with details"
+                 loading="lazy"
+                 width="800" 
+                 height="450"
+                 style="aspect-ratio: 16 / 9; object-fit: cover;">
+            <div class="content">
+                <h3>A Website All About Cars</h3>
+                <div class="tech-stack">
+                    <span class="tech">Next.js</span>
+                    <span class="tech">Tailwind CSS</span>
+                    <span class="tech">Cloudflare</span>
+                </div>
+                <p>Developed an engaging informational website where users can browse, watch, and listen to detailed information about different car models.</p>
+            </div>
+        </div>
+
+        <!-- Project 2: Shop-Lite App -->
+        <div class="project-card">
+            <img src="images/shop-lite.png" 
+                 alt="Screenshot of Shop-Lite App - lightweight online marketplace"
+                 loading="lazy"
+                 width="800" 
+                 height="450"
+                 style="aspect-ratio: 16 / 9; object-fit: cover;">
+            <div class="content">
+                <h3>Shop-Lite App</h3>
+                <div class="tech-stack">
+                    <span class="tech">React</span>
+                    <span class="tech">TypeScript</span>
+                    <span class="tech">Firebase</span>
+                </div>
+                <p>Built a lightweight online marketplace (lite e-commerce) designed to easily cater to users' shopping needs with a clean and fast interface.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    <!-- LIVE RESUME / SKILLS -->
+    <section id="resume" style="background:#f8fafc;">
+        <h2 style="text-align:center; margin-bottom:40px; font-size:2.5rem;">Skills & Experience</h2>
+        <div style="max-width:800px; margin:0 auto;">
+            <h3>Technical Skills</h3>
+            <div class="skills">
+                <span class="skill">JavaScript / TypeScript</span>
+                <span class="skill">React / Next.js</span>
+                <span class="skill">Node.js</span>
+                <span class="skill">Python</span>
+                <span class="skill">SQL & NoSQL</span>
+                <span class="skill">Cloudflare (Pages, Workers, D1)</span>
+                <span class="skill">Git & CI/CD</span>
+                <span class="skill">REST / GraphQL</span>
+            </div>
+
+            <h3 style="margin-top:40px;">Experience</h3>
+            <ul style="margin-top:20px; padding-left:20px;">
+                <li><strong>Freelance Full-Stack Developer</strong> (2024–Present) — Built and deployed a fully functional website</li>
+                <li><strong>3rd Year IT Student</strong> — Central Philippine University (2023) — Optimized site performance, improving load time by 60%.</li>
+                <!-- Add your real experience here -->
+            </ul>
+        </div>
+    </section>
+
+    <!-- CONTACT (Lead Magnet) -->
+    <section id="contact">
+        <h2 style="text-align:center; margin-bottom:40px; font-size:2.5rem;">Let's Connect</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" rows="6" placeholder="Your Message" required></textarea>
+            <button type="submit" style="background:#2563eb; color:white; padding:12px 32px; border:none; border-radius:8px; cursor:pointer; font-size:1rem;">Send Message</button>
+        </form>
+        <p id="formStatus" style="text-align:center; margin-top:16px;"></p>
+    </section>
+
+    <footer>
+        <p>© 2026 Jazmine Louisse A. Ilisan. Built with ❤️</p>
+        <p><a href="https://github.com/yourusername/portfolio" target="_blank">GitHub Repo</a> • <a href="YOUR_LINKEDIN_URL_HERE" target="_blank">LinkedIn</a></p>
+    </footer>
+
+    <script>
+        // Simple form handling (replace with Worker fetch in production)
+        document.getElementById('contactForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const status = document.getElementById('formStatus');
+            status.textContent = 'Sending...';
+            
+            // In production: fetch('/contact', { method: 'POST', body: new FormData(e.target) })
+            // For now, simulate success
+            setTimeout(() => {
+                status.textContent = '✅ Message sent! (In real setup this connects to Cloudflare Worker)';
+                e.target.reset();
+            }, 800);
+        });
+
+        // Smooth scroll for nav links (add more if needed)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                if (this.getAttribute('href') !== '#') {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
